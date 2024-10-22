@@ -1,0 +1,96 @@
+/* Ensure the container covers the whole page */
+.appointment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+  }
+  
+  /* Heading styling */
+  .heading {
+    color: blue; /* White text color */
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px; /* Spacing from top */
+    z-index: 1; /* Ensures it stays above other elements */
+  }
+  
+  /* Use grid to layout the images */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 10px;
+    width: 100%;
+    height: 80%; /* Reserve space for the button */
+  }
+  
+  /* Images should fit the grid cells and scale */
+  .grid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover their container without distortion */
+  }
+  
+  /* Center the button on the page */
+  .button-container {
+    position: absolute;
+    top: 20px; /* Position from top */
+    right: 20px; /* Position from right */
+    z-index: 1; /* Ensures it stays above other elements */
+  }
+  .book-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1976d2; /* MUI default blue */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s; /* Smooth transition for background and transform */
+}
+
+.book-button:hover {
+    background-color: #115293; /* Darker shade of blue for hover */
+    transform: translateY(-5px); /* Moves the button up by 5px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for more "lifted" effect */
+}
+
+
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+      grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    }
+  
+    .book-button {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  
+    .heading {
+      font-size: 28px; /* Smaller font size for heading */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-grid {
+      grid-template-columns: 1fr; /* 1 column for very small screens */
+      grid-template-rows: repeat(6, 1fr); /* 6 rows */
+    }
+  
+    .book-button {
+      font-size: 12px; /* Even smaller font size */
+      padding: 8px 12px;
+    }
+  
+    .heading {
+      font-size: 24px; /* Smaller font size for heading */
+    }
+  }
+  

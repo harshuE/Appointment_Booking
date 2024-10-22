@@ -1,0 +1,220 @@
+/* Background color for the body */
+body {
+    background-color: white; /* White background */
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Full height */
+    color: black; /* Text color for contrast */
+}
+
+/* Ensure the container fills the screen */
+.container {
+    height: 120vh; /* Full height */
+}
+
+/* Style for the images in the form steps */
+.step-image {
+    width: 100%; /* Set the width to 100% to cover the full column */
+    height: 600px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+    border-radius: 8px; /* Optional: Rounded corners */
+    margin-bottom: 20px; /* Optional: Add spacing below the image */
+}
+
+/* Invalid input style */
+.is-invalid {
+    background-color: #f8d7da; /* Light red background */
+    border-color: #f5c6cb; /* Red border */
+}
+
+/* Valid input style */
+.is-valid {
+    background-color: #d4edda; /* Light green background */
+    border-color: #c3e6cb; /* Green border */
+}
+
+/* Appointment Header */
+.appointment-header {
+    background: #051094; /* Gradient */
+    color: white ; /* Blue shade for text */
+    padding: 20px; /* Padding */
+    text-align: center; /* Center the text */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Card styling */
+.card-body {
+    background: white; /* White background */
+    color: black; /* Default text color */
+    padding: 15px; /* Padding */
+    border: 2px solid #0f2557; /* Card outline in blue */
+    border-radius: 8px; /* Rounded corners */
+    height: 600px; /* Fixed height */
+}
+
+/* Headings and labels */
+h3,
+label {
+    color: #051094; /* Blue shade for headings */
+}
+
+/* Form input fields with spacing between them */
+.form-group {
+    margin-bottom: 20px; /* Add space between each form group */
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    color: #000; /* Black text color */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding */
+}
+
+/* Optional: Change placeholder text color */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(0, 0, 0, 0.7); /* Dark placeholder color */
+}
+
+/* MUI Button styling */
+.btn-primary {
+    background-color: #1976d2 !important; /* MUI default blue */
+    color: white !important; /* White text */
+    border: none !important; /* No border */
+    padding: 10px 20px; /* Padding */
+    border-radius: 4px !important; /* Rounded corners */
+    text-transform: none; /* Prevent all-caps */
+}
+
+/* Delete button (MUI default red) */
+.btn-danger {
+    background-color: #d32f2f !important; /* MUI red */
+    color: white !important; /* White text */
+    border: none !important; /* No border */
+    padding: 10px 20px; /* Padding */
+    border-radius: 4px !important; /* Rounded corners */
+    text-transform: none; /* Prevent all-caps */
+}
+
+/* Update button */
+.btn-warning {
+    background-color: #075e86 !important; /* Custom blue shade */
+    color: white !important; /* White text */
+    border: none !important; /* No border */
+    padding: 10px 20px; /* Padding */
+    border-radius: 4px !important; /* Rounded corners */
+    text-transform: none; /* Prevent all-caps */
+}
+
+
+/* Position next button to the bottom-right corner */
+.btn-next {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #1976d2 !important;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 4px !important;
+    text-transform: none;
+}
+/* Flexbox container to space the buttons in Step 2 */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Align Previous button to the left and Submit button to the right */
+    padding-top: 20px;
+}
+
+/* Previous Button (aligned left) */
+.btn-previous {
+    background-color: #90caf9 !important; /* Light blue */
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    text-transform: none;
+    border-radius: 4px !important;
+}
+
+/* Submit Button (aligned right) */
+.btn-submit {
+    background-color: #1976d2 !important; /* MUI default blue */
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    text-transform: none;
+    border-radius: 4px !important;
+}
+
+/* Flexbox container to align buttons in one line with proper space between them */
+.button-group {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 20px; /* Add more space between buttons */
+    margin-top: 20px; /* Add margin above the button group */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+/* Ensure all buttons have the same size */
+.button-group button {
+    min-width: 150px; /* Set a minimum width to ensure uniform button size */
+    padding: 10px 20px; /* Padding for consistent button size */
+    text-align: center; /* Center the text */
+    display: inline-block; /* Ensure buttons behave consistently */
+}
+
+/* Success button */
+.btn-success {
+    background-color: #28a745 !important;
+    color: white !important;
+    border: none !important;
+    text-transform: none;
+    border-radius: 4px !important;
+}
+
+/* Update button */
+.btn-warning {
+    background-color: #075e86 !important;
+    color: white !important;
+    border: none !important;
+    text-transform: none;
+    border-radius: 4px !important;
+}
+
+/* Delete button */
+.btn-danger {
+    background-color: #dc3545 !important;
+    color: white !important;
+    border: none !important;
+    text-transform: none;
+    border-radius: 4px !important;
+}
+/* Flexbox container to align Previous and Submit buttons next to each other */
+.button-container2 {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left, next to each other */
+    gap: 20px; /* Add space between Previous and Submit buttons */
+    margin-top: 20px; /* Add space above the button container */
+    align-items: center; /* Ensure vertical alignment is centered */
+}
+
+/* Previous Button (aligned left) */
+.btn-previous {
+    background-color: #90caf9 !important; /* Light blue */
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    text-transform: none;
+    border-radius: 4px !important;
+}
+
+/* Submit Button (aligned next to Previous button) */
+.btn-submit {
+    background-color: #1976d2 !important; /* MUI default blue */
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    text-transform: none;
+    border-radius: 4px !important;
+}
+
